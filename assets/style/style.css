@@ -540,7 +540,7 @@ text-align: right;
     display: block;
     width: 95%;
     height: 50px;
-    background: rgba(146, 144, 144, 0.089);
+    
 }
  form input::placeholder
 {
@@ -557,7 +557,7 @@ text-align: right;
     width: 95%;
     height: 150px;
     margin-bottom: 70px;
-    background: rgba(146, 144, 144, 0.089);
+  
 }
 #blog-content .content  form textarea::placeholder
 {

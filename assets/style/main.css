@@ -585,7 +585,6 @@
 }
 #contact .btn
 { 
-    
 }
 #contact .sologan
 {
@@ -600,20 +599,25 @@
     @media screen and (max-width:864px) {
         #contact .sologan
         {
-            top:10%;
+            top:18px;
             font-size: 20px;
         }
         #contact
         {
-           
             width: 97%;
             margin: 50px auto;
             height: 250px;
         }
         #contact .btn
-        {   top: 25%;
-            font-size: 15px;
+        {   position: absolute;
+            margin: 0 auto;
+            margin-top: 140px;
+            font-size: 14px;
+            left: 0;
+            right: 0;
+            width: 100px;
             padding: 5px 5px;
+            
         }
 
 }
