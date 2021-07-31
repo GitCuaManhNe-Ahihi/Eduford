@@ -60,13 +60,17 @@
     color: #fff;
     margin: 100px auto;
     padding: 10px 10px;
-    height: 100%;
+    width: 100%;
+    
     
 }
 #banner .text__button-home h1
 {
     font-size: 40px;
-    padding: 90% 0;
+    
+    width: 70%;
+    margin:0 auto;
+    margin-top: 200px;
 }
 
 
@@ -226,6 +230,7 @@
     #banner .text__button-home h1
     {
         font-size: 30px;
+        margin-top: 0px;
     }
     #banner .text__button-home .btn
     {
@@ -250,7 +255,148 @@
         display: block;
     }
 }
+#facility
+{
+    position:  relative;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 50px 10%;
+    text-align: center;
+}
+#facility .info__about-facilities
+{
+    position: relative;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 95%;
+    margin: auto;
+}
+#facility .info__about-facilities .info__about__facilities-element
+{
+    width: 400px;
+    height: 400px;
+    margin: 10px 10px;
+    border-radius: 10px;
+    
+}
+#facility .info__about-facilities .info__about__facilities-element img{
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+   
+}
+#facility .info__about-facilities .info__about__facilities-element .text
+{
+    padding: 10px 10px;
+    text-align: justify;
+    height: 30%;
+}
+#facility .info__about-facilities .info__about__facilities-element .text p
+{
+    padding: 10px 0px;
+    font-size: 12px;
+    height: 90%;
+    overflow-y: scroll;
+}
+#facility .info__about-facilities .info__about__facilities-element .text h3
+{
+    font-size: 15px;
+}
+@media screen and (max-width:769px)
+{
+    #facility .info__about-facilities
+    {
+        flex-wrap: wrap;
+    }
+    #facility .info__about-facilities .info__about__facilities-element
+    {  flex-basis: 100%;
+        margin-top: 10px;
+    }
+    #facility .info__about-facilities .info__about__facilities-element:nth-child(1)
+    {  
+        margin-top: 0x;
+    }
+}
+#course-offer
+{
+    width: 100%;
+    padding: 50px;
+    position: relative;
+    text-align: center;
+    background-color: whitesmoke;
+    
+}
+.post-header
+{
+    padding: 10px 20px;
+    font-size: 50px;
+}
+.text-header
+{
+    padding: 10px;
+    opacity: 0.5;
+}
+#course-offer  .course
+{
+    display: flex;
+    padding: 100px;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row-reverse;
+   
+}
+#course-offer  .course .course-element
+{
+    width: 320px;
+    background: #ffeee6;
+    padding: 10px 10px;
+    border-radius: 10px;
+    margin:0 10px;
+    transition: linear 0.4s;
+    margin: auto;
+    margin-top: 20px;
 
+}
+#course-offer  .course-element> h3
+{
+  padding: 10px 0;
+}
+#course-offer  .course-element> p{
+    padding: 5px 5px;
+}
+#course-offer  .course-element:hover
+{
+    transform: scale(1.1);
+    box-shadow: 1px 2px 3px 4px var(--color-bg);
+}
+@media screen and (max-width:954px) {
+    #course-offer
+    {
+        padding: 5%;
+    }
+    #course-offer  .course .course-element
+    {
+      flex-basis: 100%;
+      margin: auto;
+      margin-top: 20px;
+
+    }
+    #course-offer  .course
+    {
+        padding: 50px 1%;
+        margin: auto;
+    }
+    .post-header {
+        padding: 10px 20px;
+        font-size: 30px;
+    }
+}
 #content-aboutus
 {
 
@@ -336,34 +482,237 @@
         font-size: 30px;
     }
 }
+#blog-content
+{
+    position: relative;
+    width: 90%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 100px 0px;
 
+}
+#blog-content .content
+{
+    flex-basis: 60%;
+}
+#blog-content .content .graduation
+{
+   width: 100%;
+}
+#blog-content .statistical table 
+{
+    width: 300px;
+    margin-left: 30px;
+}
+#blog-content .statistical table thead td
+{
+    text-align: center;
+    background: orangered;
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+#blog-content .statistical table tbody td:nth-child(1)
+{
+  text-align: left;
+}
+#blog-content .statistical table tbody td:nth-child(2)
+{
+text-align: right;
+}
+#blog-content .content  form
+{
+    width: 100%;
+    border: 1px black solid;
+    margin-top: 30px;
+    position: relative;
+}
+#blog-content .content  form legend
+{
+    padding: 20px 20px;
+}
+#blog-content .content  form input
+{
+    margin:  20px auto;
+    display: block;
+    width: 95%;
+    height: 50px;
+    background: rgba(82, 79, 71, 0.13);
+}
+ form input::placeholder
+{
+     content: "";
+     margin: 0 10px;
+     position: absolute;
+     line-height: 50px;
+     font-size: 15px;
+}
+#blog-content .content  form textarea
+{
+    margin:  20px auto;
+    display: block;
+    width: 95%;
+    height: 150px;
+    margin-bottom: 70px;
+    background: rgba(82, 79, 71, 0.13);
+}
+#blog-content .content  form textarea::placeholder
+{
+    content: "";
+    margin: 0 10px;
+    position: absolute;
+    line-height: 50px;
+    font-size: 15px;
+}
+#blog-content .content  form .btn{
+    position: relative;
+    top:-30px;
+    left: 40px;
+}
+@media screen and (max-width:763px) {
+    #blog-content
+    {
+        flex-wrap: wrap;
+    }
+    #blog-content .content
+    {
+        flex-basis: 100%;
+    }
+    #blog-content .statistical table 
+    {
+     
+        width: 200px;
+        margin: 40px auto;
+    }
+}
 
+#contact__with-us
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 50px 0px;
+    width: 100%;
 
+    
+  
+}
+#contact__with-us > iframe
+{
+   
+    height: 700px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10%;
+    
+    
+}
 
+#contact__with-us .form__contact-us
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+#contact__with-us .form__contact-us .address
+{
+    margin-left: 5%;
+    
+}
+#contact__with-us .form__contact-us .address-element
+{margin: 12px 10px;
+    display: flex;
+}
+#contact__with-us .form__contact-us .address-element .fa{
+    font-size: 30px;
+    margin: 10px 10px;
+    color: var(--color-bg);
+}
+#contact__with-us .form__contact-us .address-element .text{
+    margin: 0 10px;
+}
+#contact__with-us .form__contact-us .address-element .text P:nth-child(1)
+{
+    margin: 5px 0;
+    font-size: 20px;
+}
+#contact__with-us .form__contact-us .address-element .text P:nth-child(2)
+{
+    font-size: 14px;
+    opacity: 0.7;
+}
+#contact__with-us .form__contact-us .form
+{
+   
+   
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
 
+}
+#contact__with-us .form__contact-us .form input
+{
+    margin: 10px 0px;
+    height: 40px;
+}
+#contact__with-us .form__contact-us .form textarea
+{
+    height: 150px;
+}
+#contact__with-us .form__contact-us .form .btn
+{
+    width: 200px;
+    font-size: 15px ;
+    text-align: center;
 
+}
+@media screen and (max-width:763px) 
+{
+    #contact__with-us > iframe
+    {
+        height: 300px;
+    }
+    #contact__with-us .form__contact-us
+    {
+        flex-direction: column-reverse;
+    }
+    #contact__with-us .form__contact-us .form
+    {
+        width: 250px;
+        margin: auto;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      
+    }
+    #contact__with-us .form__contact-us .address-element .fa
+    {
+        font-size: 25px;
+    }
+    #contact__with-us .form__contact-us .address-element .text P:nth-child(1)
+    {
+        margin: 5px 0;
+        font-size: 15px;
+    }
+    #contact__with-us .form__contact-us .address
+    {
+        margin-top: 150px;
+        text-align: left;
+        
+    }
+    #contact__with-us .form__contact-us .form .btn
+    {
+        width: 150px;
+        font-size: 10px;
+    }
+}
 #about_us
 {
     position: relative;
