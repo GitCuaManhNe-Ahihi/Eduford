@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root
+{
+    --color-bg:rgba(206, 65, 13, 0.596);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+#banner
+{
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+#banner .bg
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   z-index: 0;
+
+}
+#banner .overlay
+{
+    position: absolute;
+   top: 0;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(2, 9, 32, 0.945);
+   opacity: 0.5;
+   z-index: 1;
+}
+#banner .logo
+{
+    position: absolute;
+    top:  10%;
+    left: 7%;
+    z-index: 4;
+    width: 200px;
+}
+#banner .text__button-home
+{
+    position: relative;
+    z-index: 4;
+    color: #fff;
+    margin: 100px auto;
+    padding: 10px 10px;
+    height: 100%;
+    
+}
+#banner .text__button-home h1
+{
+    font-size: 40px;
+    padding: 90% 0;
+}
+
+
+ .btn
+{ position: relative;
+ color: #fff;
+ text-decoration: none;
+ top: 60px;
+ padding: 10px 30px;
+ font-size: 20px;
+ border: 2px solid #fff;
+ transition: linear 0.2s;
+}
+ .btn::before
+{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background-color: #fff;
+    top: 50%;
+    left: -15%;
+    
+}
+ .btn::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 20%;
+    background-color: #fff;
+    top: 50%;
+   right: -15%;
+}
+.btn:hover
+{
+    background-color:var(--color-bg);
+}
+#banner .nav-menu-home
+{
+   position: absolute;
+   top:  10%;
+   right: 200px;
+   z-index: 4;
+   display: flex;
+   justify-content: space-between;
+   width: 25%;
+   list-style: none;
+}
+#banner .nav-menu-home li .nav-element{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0 10px;
+
+}
+#banner .nav-menu-home li .nav-element:hover
+{
+    color: var(--color-bg);
+}
+/*responsive*/
+.menu-responsive
+{
+    position: fixed;
+    width: 60%;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: 100;
+    transform: translateX(100%);
+    transition: transform linear 0.2s ;
+}
+.menu-responsive .close-btn,
+.menu-btn
+{
+    width: 30px;
+    position: absolute;
+    top:3%;
+    right: 10px;
+    z-index: 10;
+    filter: invert(1);
+    
+}
+.menu-btn
+{   position: fixed;
+
+    display: none;
+    
+}
+.menu-responsive .nav-menu-home-responsive
+{
+    position: absolute;
+    top:20%;
+    list-style:none;
+    left: 10%;
+    text-align: justify;
+    z-index: 10;
+   
+}
+.menu-responsive .nav-menu-home-responsive li
+{
+    padding: 20px 10px;
+    
+}
+.menu-responsive .nav-menu-home-responsive li .nav-element
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+
+}
+.menu-responsive .nav-menu-home-responsive li .nav-element:hover
+{
+    color: var(--color-bg);
+}
+.overlay_responsive
+{
+   position: fixed;
+   background: rgba(8, 7, 7, 0.76);
+   height: 100%;
+   top: 0;
+   left: 0;
+   width: 60%;
+   z-index: 4;
+   opacity: 0;
+   transition: all linear .25s ;
+   display: none;
+   
+}
+.menu-responsive.active
+{
+    transform: translateX(0%);
+}
+.overlay_responsive.active
+{
+    opacity: 1;
+    
+    
+    
+}
+.menu-btn.active{
+    display: none;
+
+}
+@media screen and (max-width:830px) {
+    #banner .logo
+    {
+        width: 130px;
+        top:5%;
+        left:5%;
+    }
+    #banner .text__button-home
+    {
+      margin-top: 30%;
+    }
+    #banner .text__button-home h1
+    {
+        font-size: 30px;
+    }
+    #banner .text__button-home .btn
+    {
+          font-size: 15px;
+          padding: 5px 5px;
+    }
+    #banner .text__button-home .btn::before,
+    #banner .text__button-home .btn::after
+    {
+        width: 16%;
+    }
+    #banner .nav-menu-home
+    {
+        display: none;
+    }
+    .menu-btn
+    {
+        display: block;
+    }
+    .overlay_responsive.active
+    {
+        display: block;
+    }
+}
+
+#content-aboutus
+{
+
+    display: flex;
+    width: 80%;
+    margin: 150px auto;
+    justify-content: space-around;
+   
+   
+
+}
+
+#content-aboutus img
+{  
+    height: 400px;
+    width: 400px;
+    flex-basis: 45%;
+    margin-left: 50px;
+}
+#content-aboutus .area-content
+{
+    width: 40%;
+    top: 0;
+    left: 0;
+
+}
+#content-aboutus .area-content p
+{
+    height: 60%;
+    overflow-y: scroll;
+}
+#content-aboutus .area-content h1
+{  
+    top: 0;
+   font-size: 40px;
+   padding-bottom: 30px;
+}
+.btn::before,
+.btn::after
+{
+    background: var(--color-bg);
+}
+.btn
+{  
+    border-color: var(--color-bg);
+    color:var(--color-bg)
+}
+.btn:hover{
+    color: white;
+}
+@media screen and (max-width:864px) {
+
+    #content-aboutus
+    {
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding: 50px 0;
+        margin: 0 auto;
+        min-height: 50vh;
+    }
+    #content-aboutus img
+    {
+        height: 300px;
+        width: 300px;
+        margin: 0 auto;
+        flex-basis: 1;
+    }
+    #content-aboutus .area-content
+    {
+        flex-basis: 1;
+        width: 100%;
+        margin: 0 auto 30px;
+       
+    }
+    .btn
+    {
+        font-size: 15px;
+       margin: auto;
+
+    }
+    #content-aboutus .area-content h1
+    {
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#about_us
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 50px auto;
+    width: 100%;
+    text-align: center;
+}
+#about_us .socical .fa
+{
+    transition: linear .25s;
+}
+#about_us .fa
+{
+    color: orangered;
+    font-size: 20px;
+    margin: 0 10px;
+}
+#about_us h4
+{
+padding: 10px 0px;
+}
+#about_us p
+{
+    width: 80%;
+    margin: auto;
+    font-size: 14px;
+    opacity: 0.7;
+    padding: 10px 10px;
+}
+.footer
+{
+    font-size: 14px;
+    opacity: 0.7;
+    font-weight: 500;
+    padding: 10px 10px;
+
+}
+#about_us .socical .fa:hover
+{
+    transform: scale(1.2);
+}
+
