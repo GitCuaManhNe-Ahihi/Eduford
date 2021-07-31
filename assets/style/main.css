@@ -584,17 +584,17 @@
     left: 0;
 }
 #contact .btn
-{ top: 40%;
-  position: relative;
+{ 
+    
 }
 #contact .sologan
 {
     position: relative;
     font-size: 30px;
-    top:30%;
+    top:10%;
     font-weight: 800;
     color: #fff;
-    width:  60%;
+    width:  80%;
     margin: auto;
 }
     @media screen and (max-width:864px) {
